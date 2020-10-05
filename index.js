@@ -140,7 +140,6 @@ const resolvers = {
 };
 
 const server = new ApolloServer({
-  schema: buildFederatedSchema([{ typeDefs, resolvers }]),
   typeDefs,
   resolvers,
   introspection: true,
